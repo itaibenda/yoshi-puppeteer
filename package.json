@@ -10,9 +10,10 @@
   },
   "scripts": {
     "start": "yoshi start",
-    "pretest": "yoshi lint && yoshi build",
+    "pretest": "yoshi build",
     "build": ":",
-    "test": "yoshi test",
+    "test": "yoshi test --mocha",
+    "posttest": "yoshi lint",
     "release": "yoshi release"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "puppeteer": "^0.10.1",
     "react-addons-test-utils": "^15.3.2",
     "react-test-renderer": "^15.5.4",
+    "sleep": "^5.1.1",
     "yoshi": "latest"
   },
   "dependencies": {

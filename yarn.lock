@@ -5625,7 +5625,7 @@ mz@^2.6.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.3.0, nan@^2.3.2, nan@^2.3.3:
+nan@>=2.5.1, nan@^2.3.0, nan@^2.3.2, nan@^2.3.3:
   version "2.7.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
 
@@ -7540,6 +7540,12 @@ simple-is@~0.2.0:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+sleep@^5.1.1:
+  version "5.1.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/sleep/-/sleep-5.1.1.tgz#878fa1d44d08eeb0f26fb2018ef8629eb1a3ab94"
+  dependencies:
+    nan ">=2.5.1"
 
 slice-ansi@0.0.4:
   version "0.0.4"

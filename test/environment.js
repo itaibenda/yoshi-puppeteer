@@ -11,12 +11,14 @@ export const beforeAndAfter = (port = 3100) => {
 
   after(() => expressServer.close());
 
-  before(() => {
-    cdnServer = spawn('node', ['./dist/test/browser/mock/cdn-server.js'], {stdio: 'inherit'});
-    sleep(1);
-  });
+  if (process.env.WIX_NODE_BUILD_WATCH_MODE !== 'true') {
+    before(() => {
+      cdnServer = spawn('node', ['./dist/test/browser/mock/cdn-server.js'], {stdio: 'inherit'});
+      sleep(1);
+    });
 
-  after(() => {
-    cdnServer.kill();
-  });
+    after(() => {
+      cdnServer.kill();
+    });
+  }
 };
